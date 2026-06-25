@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #F5F5F5;
+    color: #1A1A1A;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer utilities {
+  .vfb-stripe {
+    background-image: repeating-linear-gradient(
+      -55deg,
+      transparent,
+      transparent 12px,
+      rgba(255, 255, 255, 0.07) 12px,
+      rgba(255, 255, 255, 0.07) 24px
+    );
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #CC0000;
+    border-radius: 2px;
+  }
+}
